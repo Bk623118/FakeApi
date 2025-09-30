@@ -5,14 +5,16 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import 'react-toastify/ReactToastify.css';
 import { configureStore } from "@reduxjs/toolkit";
-import productReducer from "./productSlice";
 import { Provider } from "react-redux";
 import wishlistReducer from "./wishlistSlice";
+import productReducer from "./productPageSlice"
+import viewReducer from "./productPageSlice"
 
 const store = configureStore({
   reducer: {
     cart: productReducer,
     wishlist : wishlistReducer,
+    views: viewReducer
   },
 });
 

@@ -11,7 +11,7 @@ import Wishlist from './pages/WishList';
 import ProtectedRoute from './pages/ProtectedRoute';
 import {ChartExample,BarChartExample,PieChartExample,RadarChartExample,ComposedChartExample,AreaChartExample,ScatterChartExample} from './pages/charts';
 
-const Dashboard = () => {
+const Dashboard = () => { 
   return (
     <div>
       <h2>Line Chart</h2>
